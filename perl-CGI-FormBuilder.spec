@@ -20,6 +20,7 @@ BuildRequires:	perl(CGI)
 BuildRequires:	perl(Template)
 BuildRequires:	perl(HTML::Template)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 FormBuilder is a fully-functional form engine with numerous features.

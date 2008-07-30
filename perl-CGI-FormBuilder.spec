@@ -1,7 +1,7 @@
 %define module	CGI-FormBuilder
 %define name	perl-%{module}
 %define version 3.0302
-%define	release	%mkrel 1
+%define	release	%mkrel 3
 %define	epoch	0
 
 Name:		%{name}

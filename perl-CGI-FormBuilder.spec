@@ -1,8 +1,9 @@
 %define module	CGI-FormBuilder
 %define name	perl-%{module}
-%define version 3.0302
-%define	release	%mkrel 3
-%define	epoch	0
+%define version     3.05.01
+%define up_version  3.0501
+%define	release	    %mkrel 1
+%define	epoch	    1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,11 +12,8 @@ Epoch:		%{epoch}
 Summary:	Easily generate and process stateful forms
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%module/
-Source:		http://www.cpan.org/modules/by-module/CGI/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
+Url:        http://search.cpan.org/dist/%module/
+Source:		http://www.cpan.org/modules/by-module/CGI/%{module}-%{up_version}.tgz
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(Template)
 BuildRequires:	perl(HTML::Template)
@@ -26,7 +24,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}
 FormBuilder is a fully-functional form engine with numerous features.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{module}-%{up_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

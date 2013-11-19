@@ -1,16 +1,16 @@
 %define upstream_name    CGI-FormBuilder
-%define upstream_version 3.0501
+%define upstream_version 3.08
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 Epoch:		1
 
 Summary:	Easily generate and process stateful forms
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%upstream_name/
-Source0:	http://www.cpan.org/modules/by-module/CGI/%{upstream_name}-%{upstream_version}.tgz
+Source0:	http://www.cpan.org/modules/by-module/CGI/CGI-FormBuilder-%{upstream_version}.tgz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(CGI)
@@ -92,4 +92,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Jul 14 2005 Oden Eriksson <oeriksson@mandriva.com> 2.13-1mdk
 - initial Mandriva package
+
 

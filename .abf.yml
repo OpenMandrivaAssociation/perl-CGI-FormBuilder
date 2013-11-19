@@ -1,2 +1,4 @@
+removed_sources:
+  CGI-FormBuilder-3.0501.tgz: f682cad5f66c7b545c31605d521340e3f0c15ac5
 sources:
-  "CGI-FormBuilder-3.0501.tgz": f682cad5f66c7b545c31605d521340e3f0c15ac5
+  CGI-FormBuilder-3.08.tgz: 9deab1ef6395b3482bf622381dfabe360d9f2756

@@ -1,14 +1,15 @@
 %define upstream_name    CGI-FormBuilder
+%define upstream_version 3.20
 Name:		perl-%{upstream_name}
 Version:	3.20
-Release:	2
+Release:	1
 Epoch:		1
 
 Summary:	Easily generate and process stateful forms
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        https://metacpan.org/dist/CGI-FormBuilder
-Source0:	https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/CGI-FormBuilder-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/CGI-FormBuilder-3.20.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
